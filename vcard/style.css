@@ -1,0 +1,285 @@
+/* ==========================================================
+! 7. Profile intro
+========================================================== */
+.profile-intro {
+  margin-top: 50px;
+  position: relative;
+  z-index: 99;
+}
+@media (min-width:992px) {
+  .profile-intro {
+    height: 245px;
+  }
+}
+.profile-pic {
+  text-align: center;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  width: 210px;
+  height: 210px;
+  border: 5px solid #249991;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #fafafa;
+}
+.profile-pic img {
+  width: 188px;
+  height: 188px;
+  margin-top: 6px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================================
+! 2. Tipography
+========================================================== */
+p {
+  color: #555555;
+}
+.profile-intro p {
+  font-size: 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .profile-intro p {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+.intro-title1 {
+  font-size: 36px;
+  color: #444444;
+  letter-spacing: -1pt;
+  border-bottom: 1px solid #249991;
+  padding-bottom: 10px;
+  font-weight: 200;
+  margin-top: 15px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .intro-title1 {
+    text-align: left;
+    font-size: 40px;
+  }
+}
+@media (min-width:992px) {
+  .intro-title1 {
+    margin-top: 0;
+    font-size: 54px;
+  }
+}
+.sticky{
+  border:0px;
+  padding-bottom:30px;
+  margin-bottom:30px;
+}
+.sticky a h3{
+color:#249991;
+}
+.sticky ul{
+  padding-left: 30px;
+}
+.intro-title2 {
+  font-size: 18px;
+  color: #777777;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .intro-title2 {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+.section-title {
+  text-transform: uppercase;
+  color: #000523;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  padding-bottom: 20px;
+}
+.section-item-title-1 {
+  color: #031634;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 14px;
+}
+.gallery-caption{
+  height:auto;
+}
+
+.vt_animate .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 40px;
+}
+@page {
+  margin: 2.5cm 1.0cm;
+}
+.timeline-2 {
+  padding: 20px 0;
+}
+
+/* ==========================================================
+! 9. Section: Education and Work Experience
+========================================================== */
+.graduation-time,
+.job {
+  font-size: 14px;
+  font-weight: bold;
+  color: #999999;
+}
+.graduation-date,
+.job-date, .release-date {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200;
+  text-transform: none;
+  font-family: Arial;
+}
+.graduation-description,
+.job-description {
+  font-size: 13px;
+}
+.graduation-description p,
+.job-description p {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+/* ==========================================================
+! 10. Section: Skills
+========================================================== */
+.progress {
+  position: relative;
+  height: 25px;
+}
+.progress > .progress-type {
+  position: absolute;
+  left: 0px;
+  font-size: 13px;
+  padding: 3px 30px 2px 10px;
+  color: #ffffff;
+  background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+  position: absolute;
+  right: 0px;
+  font-weight: 800;
+  padding: 3px 10px 2px;
+  color: #888;
+  font-size: 14px;
+}
+.skills-list {
+  list-style: none;
+}
+.skills-list li {
+  clear: both;
+}
+.progress-bar {
+  background: #249991 !important;
+  width: 20%;
+}
+.progress-bar-2 {
+  background: #3b658a !important;
+}
+.progress-bar-3 {
+  background: #ce5f5f !important;
+}
+.progress-bar-4 {
+  background: #000 !important;
+}
+.skills-list {
+  margin: 0;
+  padding: 0;
+}
+.progress {
+  height: 25px !important;
+}
+#portfolioprint .colWN {
+  float: left;
+  width: 50%;
+}
+#portfolioprint {
+  display: none;
+}
+@media print {
+  #portfolioprint {
+    display: block;
+  }
+  .hidden-print {
+    display: none;
+  }
+  #portfolio, .footer-below, .visible-xs .btn-primary, .footer-col {
+    display: none;
+  }
+  .skills-list .progress {
+    margin-bottom: 0;
+  }
+  .breakpage{
+    page-break-before: always;
+  }
+  #content {
+    padding-top: 0;
+  }
+}
+/* ==========================================================
+! SECTION: THANK YOU
+========================================================== */
+.thank-you {
+  color: #888888;
+}
+/* ==========================================================
+! 13. Section: Thank you
+========================================================== */
+.thank-you {
+  font-weight: lighter;
+  font-family: Arial;
+  margin-bottom: 100px;
+  font-size: 67px;
+  line-height: 48px;
+  color: #aaaaaa;
+  font-style: italic;
+  position: relative;
+  top: -5px;
+  text-align: center;
+  text-transform: none;
+}
+@media (min-width:992px) {
+  .thank-you {
+    text-align: left;
+  }
+}
+.colW-lg-1, .colW-lg-2, .colW-lg-3, .colW-lg-4, .colW-lg-5, .colW-lg-6, .colW-lg-7, .colW-lg-8, .colW-lg-9, .colW-lg-10, .colW-lg-11, .colW-lg-12 {
+  float: left;
+}
+.colW-xs-1, .colW-sm-1, .colW-md-1, .colW-lg-1, .colW-xs-2, .colW-sm-2, .colW-md-2, .colW-lg-2, .colW-xs-3, .colW-sm-3, .colW-md-3, .colW-lg-3, .colW-xs-4, .colW-sm-4, .colW-md-4, .colW-lg-4, .colW-xs-5, .colW-sm-5, .colW-md-5, .colW-lg-5, .colW-xs-6, .colW-sm-6, .colW-md-6, .colW-lg-6, .colW-xs-7, .colW-sm-7, .colW-md-7, .colW-lg-7, .colW-xs-8, .colW-sm-8, .colW-md-8, .colW-lg-8, .colW-xs-9, .colW-sm-9, .colW-md-9, .colW-lg-9, .colW-xs-10, .colW-sm-10, .colW-md-10, .colW-lg-10, .colW-xs-11, .colW-sm-11, .colW-md-11, .colW-lg-11, .colW-xs-12, .colW-sm-12, .colW-md-12, .colW-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.colW-lg-3 {
+  width: 25%;
+}
+.colW-lg-6 {
+  width: 50%;
+}
+.colW-lg-5 {
+  width: 41.66666667%;
+}
+.colW-lg-4 {
+  width: 33.33333333%;
+}
